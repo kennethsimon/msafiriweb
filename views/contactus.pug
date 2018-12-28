@@ -1,0 +1,28 @@
+extends header-2
+
+block content
+
+  .container.contact-words
+    h4
+      | Just over a month into my trip and I wonder how I&rsquo;ve changed, if at all. Certainly the experiences I&rsquo;ve had and things I&rsquo;ve seen have shaped me in someway.
+    .social-icons
+      i.fab.fa-facebook-square.fa-3x
+      i.fab.fa-twitter-square.fa-3x
+      i.fab.fa-instagram.fa-3x
+  .contact-form
+    .row
+      form.col.s10.offset-s1.m6.offset-m3.l6.offset-l3(method='post' action='contactus/send')
+        .row
+          .input-field.col.s12
+            input.name(placeholder='name' type='text', name='name')
+          .input-field.col.s12
+            input(placeholder='email' type='text', name='email')
+          .input-field.col.s12
+            input(placeholder='phone number' type='text', name='phone')
+          .input-field.col.s12
+            input(placeholder='interested in' type='text', name='message')
+          .input-field.col.s12
+            input(placeholder='number of person' type='text', name='number')
+        button.btn.waves-effect.waves-light.z-depth-0(type='submit')
+          | Send message
+          i.material-icons.right send

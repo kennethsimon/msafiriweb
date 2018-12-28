@@ -1,0 +1,104 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title #{title}
+  link(rel='stylesheet' href='/assets/home.css')
+  link(rel='stylesheet' href='/assets/materialize/css/materialize.min.css')
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.0/css/all.css' integrity='sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h' crossorigin='anonymous')
+.header-2
+  .navigation
+    .logo
+      img(src='/assets/africa.svg' alt='')
+      a.sidenav-trigger.hide-on-large-only(href='#' data-target='slide-out')
+        i.material-icons menu
+      ul#slide-out.sidenav
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='tours') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+    .ul-tags.hide-on-med-and-down
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='safari') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+  .header-2-overlay
+    h1 #{header}
+    p Home / #{header}
+  .header-2-photo
+    img(src=`${image}` alt='')
+  block content
+  footer.page-footer.black
+    .container
+      .row
+        .col.l3.s12
+          h5.white-text About Us
+          p.grey-text.text-lighten-4
+            | About Us
+            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+        .col.l3.s12
+          h5.white-text Quick links
+          ul
+            li
+              a.grey-text.text-lighten-3(href='aboutus') About us
+            li
+              a.grey-text.text-lighten-3(href='safari') Tours
+            li
+              a.grey-text.text-lighten-3(href='gallery') Gallery
+            li
+              a.grey-text.text-lighten-3(href='contactus') Contact us
+        .col.l3.s12
+          h5.white-text Contact
+          h6
+           i.far.fa-paper-plane.left
+          | P.O Box 105739, Msasani Dar es Salaam, Tanzania
+          h6
+           i.fas.fa-phone.left
+          | + 255 22 261 8004
+          h6
+           i.far.fa-envelope.left
+          | msafiritravels@gmail.com
+          h6
+           i.fas.fa-fax.left
+          | Fax : 02 9635 0247
+        .col.l3.s12
+          h5.white-text Links
+          ul
+            li
+              a.grey-text.text-lighten-3(href='#!') Link 1
+            li
+              a.grey-text.text-lighten-3(href='#!') Link 2
+            li
+              a.grey-text.text-lighten-3(href='#!') Link 3
+            li
+              a.grey-text.text-lighten-3(href='#!') Link 4
+    .footer-copyright
+      .container
+        | &copy; 2014 Copyright Text
+        a.grey-text.text-lighten-4.right(href='#!') More Links
+  script(src='/assets/jquery.js')
+  script(src='/assets/materialize/js/materialize.min.js')
+  script(src='/assets/script.js')
+  
+  
+
+  

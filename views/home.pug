@@ -1,0 +1,191 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Home
+  link(rel='stylesheet' href='/assets/home.css')
+  link(rel='stylesheet' href='/assets/materialize/css/materialize.min.css')
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css")
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.0/css/all.css' integrity='sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h' crossorigin='anonymous')
+.header
+  .navigation
+    .logo
+      img(src='/assets/africa.svg' alt='')
+      a.sidenav-trigger.hide-on-large-only(href='#' data-target='slide-out')
+        i.material-icons menu
+      ul#slide-out.sidenav
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='safari') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+    .ul-tags.hide-on-med-and-down
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='/safari') Tours
+        li
+          a(href='/destinations') Destinations
+        li
+          a(href='/gallery') Gallery
+        li
+          a(href='/contactus') Contact us
+  .header-overlay
+    h1.animated.fadeInDown.delay-2s Where do you want to go?
+    p.animated.fadeInDown.delay-2s Trips, experiences, and places. All in one service.
+  .header-image
+    .slider
+      ul.slides
+        li
+          img(src='https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+        li
+          img(src='https://images.pexels.com/photos/795190/pexels-photo-795190.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+        li
+          img(src='https://images.pexels.com/photos/1435496/pexels-photo-1435496.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+        li
+          img(src='https://images.pexels.com/photos/247376/pexels-photo-247376.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+.destination-area
+  .destination-words
+    h2 Popular destinations
+    p our best tourist destinations
+    .destination-card-area
+      .row
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image
+              a(href='destinations')
+                img(src='https://images.pexels.com/photos/1398195/pexels-photo-1398195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title Tanzania
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image
+              a(href='destinations')
+                img(src='https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title Malawi
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image
+              a(href='destinations')
+                img(src='https://images.pexels.com/photos/248195/pexels-photo-248195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title Mozambique
+.destination-area
+  .destination-words
+    h2 Best Value Trips
+    p Best offers trips from us
+    .destination-card-area
+      .row
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image.price-card
+              a(href='safaridetails')
+                img(src='https://images.pexels.com/photos/1398195/pexels-photo-1398195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title $5000
+            .card-content
+              h6 Pangani experience
+              p 4 Days 3 Nights
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image.price-card
+              a(href='safaridetails1')
+                img(src='https://images.pexels.com/photos/1461974/pexels-photo-1461974.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title $3000
+            .card-content
+              h6 10 days unexploited southern circuit group safari
+              p
+                | Abundunt wildlife, boat safari, game viewing, rubber plantation, waterfalls and more
+        .col.s12.m6.l4
+          .card.z-depth-0
+            .card-image.price-card
+              a(href='safaridetails')
+                img(src='https://images.pexels.com/photos/248195/pexels-photo-248195.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')
+              span.card-title $7000
+            .card-content
+              h6 discover japan
+              p Lorem, ipsum.
+.destination-area
+  .destination-words
+    h2 Why choose us
+    p Here are reasons you should plan trip with us
+    .destination-card-area
+      .row
+        .col.s12.m6.l4.why
+          img(src='/assets/location.svg' alt='')
+          h4 World Class Service
+          p
+            | Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+        .col.s12.m6.l4.why
+          img(src='/assets/hotel.svg' alt='')
+          h4 Handpicked Hotels
+          p
+            | Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+        .col.s12.m6.l4.why
+          img(src='/assets/price-tag.svg' alt='')
+          h4 Best Price Guarantee
+          p
+            | Lorem ipsum dolor sit amet, consect adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+.parallax-container
+  .parallax
+    img(src='https://images.pexels.com/photos/47036/lion-wildcat-safari-africa-47036.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+footer.page-footer.black
+  .container
+    .row
+      .col.l3.s12
+        h5.white-text About Us
+        p.grey-text.text-lighten-4
+          | About Us
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+      .col.l3.s12
+        h5.white-text Quick links
+        ul
+          li
+            a.grey-text.text-lighten-3(href='aboutus') About us
+          li
+            a.grey-text.text-lighten-3(href='safari') Tours
+          li
+            a.grey-text.text-lighten-3(href='gallery') Gallery
+          li
+            a.grey-text.text-lighten-3(href='contactus') Contact us
+      .col.l3.s12
+        h5.white-text Contact
+        h6
+          i.far.fa-paper-plane.left
+          | P.O Box 105739, Msasani Dar es Salaam, Tanzania
+        h6
+          i.fas.fa-phone.left
+          | + 255 22 261 8004
+        h6
+          i.far.fa-envelope.left
+          | msafiritravels@gmail.com
+        h6
+          i.fas.fa-fax.left
+          | Fax : 02 9635 0247
+      .col.l3.s12
+        h5.white-text Links
+        ul
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 1
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 2
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 3
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 4
+  .footer-copyright
+    .container
+      | &copy; 2014 Copyright Text
+      a.grey-text.text-lighten-4.right(href='#!') More Links
+script(src='/assets/jquery.js')
+script(src='/assets/materialize/js/materialize.min.js')
+script(src='/assets/script.js')

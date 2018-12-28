@@ -1,0 +1,164 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title safari details
+  link(rel='stylesheet' href='/assets/home.css')
+  link(rel='stylesheet' href='/assets/materialize/css/materialize.min.css')
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.0/css/all.css' integrity='sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h' crossorigin='anonymous')
+.header-2
+  .navigation
+    .logo
+      img(src='/assets/africa.svg' alt='')
+      a.sidenav-trigger.hide-on-large-only(href='#' data-target='slide-out')
+        i.material-icons menu
+      ul#slide-out.sidenav
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='safari') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+    .ul-tags.hide-on-med-and-down
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='safari') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+  .header-2-overlay
+  .header-2-photo
+    img(src='https://images.pexels.com/photos/346705/pexels-photo-346705.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' alt='')
+.container
+  .tour-icons
+    .row
+      .col.s12.m6.l3.icon-div
+        i.material-icons schedule
+        p 4 days
+      .col.s12.m6.l3.icon-div
+        i.material-icons event
+        p jan, feb, mar
+      .col.s12.m6.l3.icon-div
+        i.material-icons monetization_on
+        p $2,500
+      .col.s12.m6.l3.icon-div
+        i.material-icons group
+        p availability 50
+  .tour-details
+    .row
+      .col.s12.tour-details-words
+        h4 Day 1
+        p
+          | TIEM will drive you from Tanga town to Pangani and visiting Tongoni Ruins on the way for historical sightseeing during the 14 th century then proceed to KIGOMBE Village where the endemic specie of fish found (Kuku Kisu) and visiting the historical harbor at the fish market.
+          | Having lunch at Kingfishers Beach hotel before heading to Pangani secret coastal historical town in Tanzania whereby you will walk around this historical town before dinner and overnight at the beach hotel or Lodge.
+        .tour-details-photo
+          img(src='https://images.pexels.com/photos/346705/pexels-photo-346705.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' alt='')
+        h4 Day 2
+        p
+          | After breakfast at 8:30 am will cross a river Pangani by ferry start cycling to Richard Hindorl Tower. The farmer from German who introduced a sisal in Tanga/Tanzania and visiting a sisal farm as well as the factory. You will have a chance to share the life experience of the origin Swahili from local community before having luch at Ushongo fish Village. Visiting Turtle nest, local fish market and see how they operate their fish auction. You will have enough time to enjoy and swim at Indian ocean before the sunset. The beach fire, drumming will accompany your dinner and overnight at beach hotel or lodge.
+        h4 Day 3
+        p
+          | After breakfast at 8:30 am will go back to Pangani town for a River cruising ,birds watching, mangrove forest and stop at Matakani Village for different experience with locals i.e fishing, coconut juice and coconut wine along Pangani river then return to Pangani town for lunch and heading back to Tanga.
+          | End of the Tour.
+        .tour-details-photo
+          img(src='https://images.pexels.com/photos/346705/pexels-photo-346705.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' alt='')
+  .tour-instructions
+    .row
+      .col.s12
+        table
+          tbody
+            tr
+              td Departure
+              td San Francisco International Airport
+            tr
+              td
+                | Departure Time
+              td Please arrive by 10:20 AM for a prompt departure at 10:50 AM
+            tr
+              td Return Time
+              td Approximately 8:30 PM
+            
+  #map.tour-map
+footer.page-footer.black
+  .container
+    .row
+      .col.l3.s12
+        h5.white-text About Us
+        p.grey-text.text-lighten-4
+          | About Us
+          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
+      .col.l3.s12
+        h5.white-text Quick links
+        ul
+          li
+            a.grey-text.text-lighten-3(href='#!') About us
+          li
+            a.grey-text.text-lighten-3(href='#!') Tours
+          li
+            a.grey-text.text-lighten-3(href='#!') Gallery
+          li
+            a.grey-text.text-lighten-3(href='#!') Contact us
+      .col.l3.s12
+        h5.white-text Contact
+        h6
+          i.far.fa-paper-plane.left
+          |  4481 Rabana Place
+        h6
+          i.fas.fa-phone.left
+          | +880 17980XXXXX
+        h6
+          i.far.fa-envelope.left
+          | info@example.com
+        h6
+          i.fas.fa-fax.left
+          | Fax : 02 9635 0247
+      .col.l3.s12
+        h5.white-text Links
+        ul
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 1
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 2
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 3
+          li
+            a.grey-text.text-lighten-3(href='#!') Link 4
+  .footer-copyright
+    .container
+      | &copy; 2014 Copyright Text
+      a.grey-text.text-lighten-4.right(href='#!') More Links
+script(src='/assets/jquery.js')
+script(src='/assets/materialize/js/materialize.min.js')
+script(src='/assets/script.js')
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBM8EkQS8a7oF91fWN4cv6i1SHA57pAYRI&callback=initMap' async='' defer='')
+script.
+  function initMap() {
+  var myLatLng = {lat: -5.434003, lng: 38.992673};
+  // Create a map object and specify the DOM element
+  // for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+  center: myLatLng,
+  zoom: 4
+  });
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+  map: map,
+  position: myLatLng,
+  title: 'Hello World!'
+  });
+  }
