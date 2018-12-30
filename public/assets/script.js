@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('.materialboxed').materialbox();
     $('.slider').slider({
-      height: 800,
+      height: 1000,
       indicators: false,
       interval: 5000,
     });
