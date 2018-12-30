@@ -2,7 +2,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
 body{
     background-color: rgb(248, 250, 255);
@@ -436,3 +436,9 @@ color: black;
     margin-bottom: 70px;
 }
 
+footer h5{
+    font-size: 12px;
+}
+.page-footer h6{
+    font-size: 12px;
+}
