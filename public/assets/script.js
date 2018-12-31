@@ -14,6 +14,11 @@ $(document).ready(function(){
       }else{
        $('.navigation').css('background-color', 'transparent');
       }
+      if($(this).scrollTop() >= 200 ){
+        $('.whyanim').show();
+      }else{
+        $('.whyanim').hide();
+      }
   });
   });
 

@@ -442,3 +442,34 @@ footer h5{
 .page-footer h6{
     font-size: 12px;
 }
+.parallax-div{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.parallax-div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.home-quotes{
+    width: 100%;
+    background-color: rgb(96, 96, 96);
+    position: relative;
+    text-align: center;
+}
+.home-quotes p{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+/*animations*/
+
+.whyanim{
+    display: none;
+}
