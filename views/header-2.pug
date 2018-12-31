@@ -4,6 +4,7 @@ head
   meta(http-equiv='X-UA-Compatible' content='ie=edge')
   title #{title}
   link(rel='stylesheet' href='/assets/home.css')
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css")
   link(rel='stylesheet' href='/assets/materialize/css/materialize.min.css')
   // Import Google Icon Font
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
@@ -44,18 +45,17 @@ head
   .header-2-overlay
     h1 #{header}
     p Home / #{header}
-  .header-2-photo
+  .header-2-photo.animated.fadeInDown
     img(src=`${image}` alt='')
   block content
   footer.page-footer.black
     .container
       .row
-        .col.l3.s12
+        .col.l4.s12
           h5.white-text About Us
           p.grey-text.text-lighten-4
-            | About Us
-            | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
-        .col.l3.s12
+            | Msafiri tours is a tourist company.Its tours are based on East Africa, Mozambique and Malawi. We offer best services with affordable prices etc
+        .col.l4.s12
           h5.white-text Quick links
           ul
             li
@@ -66,7 +66,7 @@ head
               a.grey-text.text-lighten-3(href='gallery') Gallery
             li
               a.grey-text.text-lighten-3(href='contactus') Contact us
-        .col.l3.s12
+        .col.l4.s12
           h5.white-text Contact
           h6
            i.far.fa-paper-plane.left
@@ -80,17 +80,6 @@ head
           h6
            i.fas.fa-fax.left
           | Fax : 02 9635 0247
-        .col.l3.s12
-          h5.white-text Links
-          ul
-            li
-              a.grey-text.text-lighten-3(href='#!') Link 1
-            li
-              a.grey-text.text-lighten-3(href='#!') Link 2
-            li
-              a.grey-text.text-lighten-3(href='#!') Link 3
-            li
-              a.grey-text.text-lighten-3(href='#!') Link 4
     .footer-copyright
       .container
         | &copy; 2018 Copyright iCreatetz
