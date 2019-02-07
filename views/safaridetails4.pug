@@ -1,0 +1,128 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Document
+  link(rel='stylesheet' href='/assets/home.css')
+  link(rel='stylesheet' href='/assets/materialize/css/materialize.min.css')
+  // Import Google Icon Font
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.0/css/all.css' integrity='sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h' crossorigin='anonymous')
+.header-2
+  .navigation
+    .logo
+      img(src='/assets/africa.svg' alt='')
+      a.sidenav-trigger.hide-on-large-only(href='#' data-target='slide-out')
+        i.material-icons menu
+      ul#slide-out.sidenav
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='tours') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+    .ul-tags.hide-on-med-and-down
+      ul
+        li
+          a(href='/') Home
+        li
+          a(href='aboutus') About us
+        li
+          a(href='safari') Tours
+        li
+          a(href='destinations') Destinations
+        li
+          a(href='gallery') Gallery
+        li
+          a(href='contactus') Contact us
+  .header-2-overlay
+  .header-2-photo
+    img(src='https://images.pexels.com/photos/346705/pexels-photo-346705.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' alt='')
+.container
+  .tour-icons
+    .row
+      .col.s12.m6.l3.icon-div
+        i.material-icons schedule
+        p 5 days
+      .col.s12.m6.l3.icon-div
+        i.material-icons event
+        p jan, feb, mar
+      .col.s12.m6.l3.icon-div
+        i.material-icons monetization_on
+        p $2,500
+      .col.s12.m6.l3.icon-div
+        i.material-icons group
+        p availability 50
+  .tour-details
+    .row
+      .col.s12.tour-details-words
+        h4 TONGONI RUINS CULTURAL TOUR (6-7 hrs)
+        p
+          | These ruins are located about 17km from Tanga city, comprising a mosque and over forty graves. The remaining ruins are part of the small town founded in the 14th century which contains the largest collections of Shiraz tombs in East Africa and indicate the prosperity before the arrival of the Portuguese disrupted the trading routes on which Coastal Town like Tongoni depends. The settlement of Tongoni was mentioned by Vasco da Gama in April 1498 en route to India.
+
+
+         
+  
+footer.page-footer.black
+  .container
+    .row
+      .col.l4.s12
+        h5.white-text About Us
+        p.grey-text.text-lighten-4
+          | Msafiri tours is a tourist company.Its tours are based on East Africa, Mozambique and Malawi. We offer best services with affordable prices etc
+      .col.l4.s12
+        h5.white-text Quick links
+        ul
+          li
+            a.grey-text.text-lighten-3(href='aboutus') About us
+          li
+            a.grey-text.text-lighten-3(href='safari') Tours
+          li
+            a.grey-text.text-lighten-3(href='gallery') Gallery
+          li
+            a.grey-text.text-lighten-3(href='contactus') Contact us
+      .col.l4.s12
+        h5.white-text Contact
+        h6
+          i.far.fa-paper-plane.left
+          |  P.O Box 105739,Msasani Dar es Salaam, Tanzania
+        h6
+          i.fas.fa-phone.left
+          | + 255 22 261 8004
+        h6
+          i.far.fa-envelope.left
+          | msafiritravels@gmail.com
+        h6
+          i.fas.fa-fax.left
+          | Fax : 02 9635 0247
+  .footer-copyright
+    .container
+      | &copy; 2018 Copyright iCreatetz
+      a.grey-text.text-lighten-4.right(href='#!') More Links
+script(src='/assets/jquery.js')
+script(src='/assets/materialize/js/materialize.min.js')
+script(src='/assets/script.js')
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBM8EkQS8a7oF91fWN4cv6i1SHA57pAYRI&callback=initMap' async='' defer='')
+script.
+  function initMap() {
+  var myLatLng = {lat: -25.363, lng: 131.044};
+  // Create a map object and specify the DOM element
+  // for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+  center: myLatLng,
+  zoom: 4
+  });
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+  map: map,
+  position: myLatLng,
+  title: 'Hello World!'
+  });
+  }
+

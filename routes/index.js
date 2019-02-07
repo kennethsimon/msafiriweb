@@ -8,7 +8,10 @@ const galleryController = require('../controllers/galleryController');
 const safariController = require('../controllers/safariController');
 const safaridetailsController = require('../controllers/safaridetailsController')
 const safaridetails1Controller = require('../controllers/safaridetails1Controller');
-
+const safaridetails2Controller = require('../controllers/safaridetails2Controller');
+const safaridetails3Controller = require('../controllers/safaridetails3Controller');
+const safaridetails4Controller = require('../controllers/safaridetails4Controller');
+const safaridetails5Controller = require('../controllers/safaridetails5Controller');
 router.get('/', homeController.home);
 router.get('/aboutus', aboutusController.aboutus);
 router.get('/contactus', contactusController.contactus);
@@ -17,5 +20,8 @@ router.get('/gallery', galleryController.gallery);
 router.get('/safari', safariController.safari);
 router.get('/safaridetails', safaridetailsController.safaridetails);
 router.get('/safaridetails1', safaridetails1Controller.safaridetails1);
-
+router.get('/safaridetails2', safaridetails2Controller.safaridetails2);
+router.get('/safaridetails3', safaridetails3Controller.safaridetails3);
+router.get('/safaridetails4', safaridetails4Controller.safaridetails4);
+router.get('/safaridetails5', safaridetails5Controller.safaridetails5);
 module.exports = router;
